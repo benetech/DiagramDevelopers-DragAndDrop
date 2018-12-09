@@ -1,0 +1,5 @@
+# Normalize line endings in text files; automatically detect binary files.
+* text=auto
+# Declare binary file types.
+*.docx binary
+
