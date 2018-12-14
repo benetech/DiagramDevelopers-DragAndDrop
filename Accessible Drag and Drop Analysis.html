@@ -1,0 +1,715 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Accessible Drag and Drop Analysis</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+
+          <th scope="col">
+            Complexity
+          </th>
+
+          <th scope="col">
+            Name
+          </th>
+
+          <th scope="col">
+            Platform
+          </th>
+
+          <th scope="col">
+            Type
+          </th>
+
+          <th scope="col">
+            Task
+          </th>
+
+          <th scope="col">
+            Input Modality
+          </th>
+
+          <th scope="col">
+            Solution
+          </th>
+
+          <th scope="col">
+            Related URLs / Examples
+          </th>
+
+          <th scope="col">
+            Notes
+          </th>
+
+        </tr>
+
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Simple
+          </td>
+          <td>
+            WeScheme
+          </td>
+          <td>
+            Web
+          </td>
+          <td>
+            Block based Programming Enviornment
+          </td>
+          <td>
+            Copy/Cut and Paste
+          </td>
+          <td>
+            Keyboard / (Voice - Still to be tested)
+          </td>
+          <td>
+            Use arrow keys to navigate to desired source.  Multi-select is achieved through holding down Ctrl & arrowkeys and use space bar to add to active set.  (Similar to File managers / Windows Explorer).  Note: Can not do Shift, so you can't do contigeous selection.  Arrow to destination, then you can do a paste or paste before.  Must pick a direction for paste.  Ctrl + Shift + V is paste before vs. standard Ctrl + V to paste after
+          </td>
+          <td>
+            wescheme.org
+          </td>
+          <td>
+            Tree View which is accessible of the Blocks
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            Simple
+          </td>
+          <td>
+            iOS Legacy VO Drag and Drop
+          </td>
+          <td>
+            iOS
+          </td>
+          <td>
+            OS manipulation of objects (applications, or content)
+          </td>
+          <td>
+            Drag an icon (app or folder) to an empty location or ontop of another icon on the same screen
+          </td>
+          <td>
+            touch & Keyboard
+          </td>
+          <td>
+            Double tap and hold the item you are trying to move then slide you're finger to the spot you want to drop the item, then lift finger off screen.
+          </td>
+          <td>
+
+          </td>
+          <td>
+
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            Simple
+          </td>
+          <td>
+            Windows File Explorer
+          </td>
+          <td>
+            Windows
+          </td>
+          <td>
+            OS manipulation of objects (applications, or content)
+          </td>
+          <td>
+            Dragging and dropping a single item
+          </td>
+          <td>
+            Keyboard
+          </td>
+          <td>
+            arrow keys to select the source, use Ctrl+C or X to copy/cut respectively and use keyboard to navigate to destination, and use Ctrl+V to paste
+          </td>
+          <td>
+
+          </td>
+          <td>
+
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            Simple
+          </td>
+          <td>
+            iOS Picker
+          </td>
+          <td>
+            iOS
+          </td>
+          <td>
+            Slider
+          </td>
+          <td>
+            actuating a slider or picker object.
+          </td>
+          <td>
+            touch & Keyboard
+          </td>
+          <td>
+            Focus the picker control, and swipe up/down to adjust values
+          </td>
+          <td>
+
+          </td>
+          <td>
+            anything from switching screens from ios, to adjusting the date in a calendar, swiping between photos in a caracell object.
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            Simple
+          </td>
+          <td>
+            Web Slider
+          </td>
+          <td>
+            Web
+          </td>
+          <td>
+            Slider
+          </td>
+          <td>
+            adjust a slider
+          </td>
+          <td>
+            Keyboard
+          </td>
+          <td>
+            Arrow keys increment/decrement, home and end keys snap to beginning/end, page up/page down step a large amount than up or down arrow moves you.  Touch gestures allow for manipulation of single values only at this time.
+          </td>
+          <td>
+            http://w3c.github.io/aria-practices/#slider
+          </td>
+          <td>
+            So page up/down are larger incremental values which can change depending on the situation.
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            Simple
+          </td>
+          <td>
+            Rotate an object about a point
+          </td>
+          <td>
+            Web
+          </td>
+          <td>
+            Slider?
+          </td>
+          <td>
+            Example: Rotate an arm and a leg attached to a body. As leg rotates, foot rubs on a carpet and charges are transfered into body. As arm rotates, it gets closer/farther from a metal  object that can discharge charges from body if they are too close.
+          </td>
+          <td>
+            Keyboard/Mouse/Touch
+          </td>
+          <td>
+            Rotating objects behave like web sliders. Arrow keys move them, and increment their position. Positionss along angles of rotation are described relative to important locations. Every movement, position of object is described by a screen reader.
+          </td>
+          <td>
+            Prototype Version
+          </td>
+          <td>
+
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            Simple
+          </td>
+          <td>
+            Example of multiple sliders
+          </td>
+          <td>
+            Web
+          </td>
+          <td>
+            Multiple Sliders
+          </td>
+          <td>
+            Collection of sliders that change different things with dynamic results
+          </td>
+          <td>
+            Keyboard/Mouse/Touch
+          </td>
+          <td>
+            Each slider is an HTML input with type=range. Dynamic behavior that results from changes is announced with an aria-live alert.
+          </td>
+          <td>
+            https://phet.colorado.edu/sims/html/resistance-in-a-wire/latest/resistance-in-a-wire_en.html
+          </td>
+          <td>
+            This example supports keyboard navigation but not alternative text
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            Simple
+          </td>
+          <td>
+            Categorization CSUN
+          </td>
+          <td>
+            Web
+          </td>
+          <td>
+            Categorization
+          </td>
+          <td>
+            Using keyboard to select a single item from one list and drop it into a specific category target area
+          </td>
+          <td>
+            Keyboard
+          </td>
+          <td>
+            Proof of concept and sample code provided for simple web based categorization
+          </td>
+          <td>
+            https://benetech.github.io/Accessible-Interactives-Dev/Drag%20and%20Drop/Categorization/Categorization.html
+          </td>
+          <td>
+
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            Simple
+          </td>
+          <td>
+            Match CSUN
+          </td>
+          <td>
+            Web
+          </td>
+          <td>
+            Matching
+          </td>
+          <td>
+            Using keyboard to select a single item from one list then select its match in a second list and making the connection between the two is pressing a button to confirm the match.
+          </td>
+          <td>
+            Keyboard
+          </td>
+          <td>
+            Proof of concept and sample code provided for simple web based categorization
+          </td>
+          <td>
+            https://benetech.github.io/Accessible-Interactives-Dev/Drag%20and%20Drop/Match/index.html
+          </td>
+          <td>
+
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            Simple
+          </td>
+          <td>
+            Sorting CSUN
+          </td>
+          <td>
+            Web
+          </td>
+          <td>
+            Sorting
+          </td>
+          <td>
+            Using a keyboard to select and move in a list one item to another position in the list
+          </td>
+          <td>
+            Keyboard
+          </td>
+          <td>
+            Proof of concept and sample code provided for simple web based sorting a list
+          </td>
+          <td>
+            https://benetech.github.io/Accessible-Interactives-Dev/Drag%20and%20Drop/Sortable/sortable.html
+          </td>
+          <td>
+
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            Intermediate
+          </td>
+          <td>
+            iOS 11 Voice Over Drag and Drop
+          </td>
+          <td>
+            iOS
+          </td>
+          <td>
+            OS manipulation of objects (applications, or content)
+          </td>
+          <td>
+            copy/cut/paste/drag and drop and create folders
+          </td>
+          <td>
+            touch & Keyboard
+          </td>
+          <td>
+            Must be in edit mode, use the actions rotar to select drag.  Navigate on your device to a destination, then you have some options to either add the currently focused item to your drag session, or paste everything in your drag session before or after the currently focused item or combine to create a new folder with all items in the drag session and currently focused item.
+          </td>
+          <td>
+
+          </td>
+          <td>
+
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            Intermediate
+          </td>
+          <td>
+            iOS Legacy VO Drag and Drop
+          </td>
+          <td>
+            iOS
+          </td>
+          <td>
+            OS manipulation of objects (applications, or content)
+          </td>
+          <td>
+            Drag an icon (app or folder) to an empty location or ontop of another icon on a different screen
+          </td>
+          <td>
+            touch & Keyboard
+          </td>
+          <td>
+            Double tap and hold the item you are trying to move then slide you're finger to the right or left edge of the screen for next/previous screen respetively.  Hold your finger there until screen change is announced, keep holding to subsequent screen or drop item to desired location.
+          </td>
+          <td>
+
+          </td>
+          <td>
+
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            Intermediate
+          </td>
+          <td>
+            Windows File Explorer
+          </td>
+          <td>
+            Windows
+          </td>
+          <td>
+            OS manipulation of objects (applications, or content)
+          </td>
+          <td>
+            Dragging and dropping multiple items
+          </td>
+          <td>
+            Keyboard
+          </td>
+          <td>
+            Use Ctrl + arrow keys to move focus without cancelling selection, use Ctrl + space to select an item, or Ctrl + shift+ arrow keys to select a multiple items while preserving the other selected non-contigeous items.   use Ctrl+C or X to copy/cut respectively and use keyboard to navigate to destination, and use Ctrl+V to paste
+          </td>
+          <td>
+
+          </td>
+          <td>
+
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            Intermediate
+          </td>
+          <td>
+            Dragging objects along a 1D line
+          </td>
+          <td>
+            Web
+          </td>
+          <td>
+            Slider?
+          </td>
+          <td>
+            Move 2 masses in a line closer and farther away from each other to observe the force they excert on each other.
+          </td>
+          <td>
+            Keyboard/Mouse/Touch
+          </td>
+          <td>
+            Masses look like web sliders. Arrow keys move them along 1D position line. Page up and  page down move them by 1/10 of their available range. Home and End move masses to beginning and end of their range, respectively.
+          </td>
+          <td>
+            Prototype Version
+          </td>
+          <td>
+
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            Intermediate
+          </td>
+          <td>
+            Large Number of Drop Targets
+          </td>
+          <td>
+            Web
+          </td>
+          <td>
+            Application
+          </td>
+          <td>
+            Example: Drag squares into an nxn grid to create shapes and measure shape area and perimeter, where n is > 10
+          </td>
+          <td>
+            Keyboard/Mouse/Touch
+          </td>
+          <td>
+
+          </td>
+          <td>
+            Prototype Version
+          </td>
+          <td>
+            This example currently has no support for accessibility.
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            Difficult
+          </td>
+          <td>
+            iOS Legacy VO Drag and Drop
+          </td>
+          <td>
+            iOS
+          </td>
+          <td>
+            OS creation of folders
+          </td>
+          <td>
+            DoubleTap and hold to drag an icon (app or folder) on to either another app icon or a folder icon and hold it overtop of the destination until either a folder is created or the folder is opened and then release.
+          </td>
+          <td>
+            touch & Keyboard
+          </td>
+          <td>
+            Double tap and hold the item you are trying to move then slide you're finger to the spot you want to drop the item, then lift finger off screen.
+          </td>
+          <td>
+
+          </td>
+          <td>
+
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            Difficult
+          </td>
+          <td>
+            Windows File Explorer
+          </td>
+          <td>
+            Windows
+          </td>
+          <td>
+            OS manipulation of objects (applications, or content)
+          </td>
+          <td>
+            Dragging and dropping multiple non-contigeous items
+          </td>
+          <td>
+            Keyboard
+          </td>
+          <td>
+            Use the keyboard to arrow to the first or last item then Hold Down Shift plus arrow keys to select range multiple contigeous source items use Ctrl+C or X to copy/cut respectively and use keyboard to navigate to destination, and use Ctrl+V to paste
+          </td>
+          <td>
+
+          </td>
+          <td>
+            use of arrow keys without any modifiers (ie. Ctrl / Shift) will clear selection on all but the currently active item.
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            Difficult
+          </td>
+          <td>
+            Play with object in a 2D plane, while dragging object can mutate, when it is released object  position might change
+          </td>
+          <td>
+            Web
+          </td>
+          <td>
+            Application
+          </td>
+          <td>
+            Move in a 2D play area, transfer electrons from sweater to balloon, rub balloon on an insulator,  release balloon and observe it respond to electrostatic forces.
+          </td>
+          <td>
+            Keyboard/Mouse/Touch
+          </td>
+          <td>
+            WASD and arrow keys move balloon in 2D plane. Hold down shift plus movement keys to  move balloon more slowly. Various hot key combinations move balloon to important locations in play area. After movement and after certain events, descriptive feedback is provided to user with aria-live attribute.
+          </td>
+          <td>
+            (Prototype Version)
+          </td>
+          <td>
+            JAWS makes use of arrow keys imposssible, even with ARIA role=application
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            Difficult
+          </td>
+          <td>
+            Rubbing two things against each other
+          </td>
+          <td>
+            Web
+          </td>
+          <td>
+            Application
+          </td>
+          <td>
+            Example: Rub two things against each other, observing how friction causes a material to heat up and melt. If rubbing occcurs quickly, temperature rises and particles can be rubbed off of objects.
+          </td>
+          <td>
+            Keyboard/Mouse/Touch
+          </td>
+          <td>
+            WASD and arrow keys move objects up, down, left, and right in a 2D plane. Hold down shift  plus movement keys  to move object more slowly.
+          </td>
+          <td>
+            Prototype Version
+          </td>
+          <td>
+            JAWS makes use of arrow keys impossible, even with ARIA  role=application.
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            Difficult
+          </td>
+          <td>
+            Example of speed impacting drag interaction
+          </td>
+          <td>
+            Web
+          </td>
+          <td>
+            Application
+          </td>
+          <td>
+            Example: Drag an object across another object where speed of dragging impacts behavior. Example: A magnet dragging thorugh a coil of wire connected to a lightbulb. Change in drag speed will change induced current through the wire and brightness of the lightbulb.
+          </td>
+          <td>
+            Keyboard/Mouse/Touch
+          </td>
+          <td>
+            WASD and arrow keys move object in a 2D plane. Hold down shift to change movement speed. As object moves through critical locations, aria-live is used to announce changes in the application. For instance, if magnet moves quickly to the left and the lightbulb lights up, a summary of this is announced with aria-live.
+          </td>
+          <td>
+            https://phet.colorado.edu/sims/html/friction/latest/friction_en.html https://phet.colorado.edu/sims/html/faradays-law/latest/faradays-law_en.html
+          </td>
+          <td>
+            These examples currently has no support for accessibility.
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            Difficult
+          </td>
+          <td>
+            Sorting items from 3 buckets into 3 destinations:
+          </td>
+          <td>
+            Web
+          </td>
+          <td>
+            Sorting
+          </td>
+          <td>
+            Example: Protons, neutrons, and electrons are available in three buckets. Particles can be dragged into an atom, where each particle type needs to go in a particular location. If drop location is accurate enough, particle ill move into correct location based on atomic model. Otherwise it will return to particle bucket.
+          </td>
+          <td>
+            Keyboard/Mouse/Touch
+          </td>
+          <td>
+
+          </td>
+          <td>
+            https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_en.html?screens=1
+          </td>
+          <td>
+            This example currently has no support for accessibility.
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+
+          </td>
+          <td>
+            Opera D&D Example
+          </td>
+          <td>
+            Web
+          </td>
+          <td>
+
+          </td>
+          <td>
+
+          </td>
+          <td>
+
+          </td>
+          <td>
+
+          </td>
+          <td>
+            https://dev.opera.com/articles/accessible-drag-and-drop/
+          </td>
+          <td>
+
+          </td>
+
+        </tr>
+
+      </tbody>
+    </table>
+  </body>
+</html>
