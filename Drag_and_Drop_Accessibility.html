@@ -681,7 +681,7 @@
             Difficult
           </td>
           <td>
-            Rubbing two things against each other
+            Speed dependent dragging
           </td>
           <td>
             Web
@@ -690,43 +690,13 @@
             Application
           </td>
           <td>
-            Example: Rub two things against each other, observing how friction causes a material to heat up and melt. If rubbing occcurs quickly, temperature rises and particles can be rubbed off of objects.
+            Drag object freely in a 2D area where speed of drag impacts state of the object and surrounding application.
           </td>
           <td>
             Keyboard/Mouse/Touch
           </td>
           <td>
-            WASD and arrow keys move objects up, down, left, and right in a 2D plane. Hold down shift  plus movement keys  to move object more slowly.
-          </td>
-          <td>
-            Prototype Version
-          </td>
-          <td>
-            JAWS makes use of arrow keys impossible, even with ARIA  role=application.
-          </td>
-
-        </tr>
-        <tr>
-          <td>
-            Difficult
-          </td>
-          <td>
-            Example of speed impacting drag interaction
-          </td>
-          <td>
-            Web
-          </td>
-          <td>
-            Application
-          </td>
-          <td>
-            Example: Drag an object across another object where speed of dragging impacts behavior. Example: A magnet dragging thorugh a coil of wire connected to a lightbulb. Change in drag speed will change induced current through the wire and brightness of the lightbulb.
-          </td>
-          <td>
-            Keyboard/Mouse/Touch
-          </td>
-          <td>
-            WASD and arrow keys move object in a 2D plane. Hold down shift to change movement speed. As object moves through critical locations, aria-live is used to announce changes in the application. For instance, if magnet moves quickly to the left and the lightbulb lights up, a summary of this is announced with aria-live.
+            WASD and arrow keys move object in a 2D plane. Hold down shift to change movement speed. As object moves through critical locations, Accessibility API is used to announce state changes.
           </td>
           <td>
              <p><a href=" https://phet.colorado.edu/sims/html/friction/latest/friction_en.html">Phet Simulation (Friction)</a></p>
