@@ -66,7 +66,7 @@
 <ul>
 <li>Drag and drop interaction with a mouse or touch screen, coordinated with a visual display.</li>
 <li>Drag and drop interaction with speech output (e.g., reading the objects encountered as the user finds the source location, the objects passed over as the object moves, and the destination). This can be effectively implemented on a touch screen.</li>
-<li>Drag and drop interaction on a dynamic tactile graphics display, with touch or mouse input and tactile output. (It isn’t clear whether this has actually been implemented. The tactile displays developed in the <a href="http://www.hyperbraille.de/?lang=en">HyperBraille Project</a> should be capable of it, as should be the <a href="http://www.orbitresearch.com/graphiti.php">Graphiti display device</a> currently under development by Orbit Research and the American Printing House for the blind.)</li>
+<li>Drag and drop interaction on a dynamic tactile graphics display, with touch or mouse input and tactile output. (It isn’t clear whether this has actually been implemented. The tactile displays developed in the <a href="http://www.hyperbraille.de/?lang=en">HyperBraille Project</a> should be capable of it, as should be the <a href="https://www.aph.org/graphiti/">Graphiti display device</a> currently under development by Orbit Research and the American Printing House for the blind.)</li>
 </ul>
 <h2 id="enhancing-visual-drag-and-drop-interactions">Enhancing Visual Drag and Drop Interactions</h2>
 <p>Users who encounter difficulty with fine motor control or who have a vision impairment that makes small objects difficult to distinguish without enlargement can be expected to benefit from constraints on the minimum visual size of sources and destinations. For further details, see the &quot;target size&quot; proposal which is under consideration for inclusion in <a href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines (WCAG) 2.1</a>.</p>
@@ -290,7 +290,7 @@
             Simple
           </td>
           <td>
-            Rotate an object about a point
+            Rotation
           </td>
           <td>
             Web
@@ -299,50 +299,19 @@
             Slider?
           </td>
           <td>
-            Example: Rotate an arm and a leg attached to a body. As leg rotates, foot rubs on a carpet and charges are transfered into body. As arm rotates, it gets closer/farther from a metal  object that can discharge charges from body if they are too close.
+            Rotation of an object about a point
           </td>
           <td>
             Keyboard/Mouse/Touch
           </td>
           <td>
-            Rotating objects behave like web sliders. Arrow keys move them, and increment their position. Positionss along angles of rotation are described relative to important locations. Every movement, position of object is described by a screen reader.
+            Metaphor for radial rotation is a linear slider, accessible drag and drop can accomplished similarly. Arrow keys move object along values. Each movement and critical ranges are described with Accessibility APIs.
           </td>
           <td>
             Prototype Version
           </td>
           <td>
 
-          </td>
-
-        </tr>
-        <tr>
-          <td>
-            Simple
-          </td>
-          <td>
-            Example of multiple sliders
-          </td>
-          <td>
-            Web
-          </td>
-          <td>
-            Multiple Sliders
-          </td>
-          <td>
-            Collection of sliders that change different things with dynamic results
-          </td>
-          <td>
-            Keyboard/Mouse/Touch
-          </td>
-          <td>
-            Each slider is an HTML input with type=range. Dynamic behavior that results from changes is announced with an aria-live alert.
-          </td>
-          <td>
-              <a href="https://phet.colorado.edu/sims/html/resistance-in-a-wire/latest/resistance-in-a-wire_en.html">PheT Simulation (Resistance in a wire)</a>
-            
-          </td>
-          <td>
-            This example supports keyboard navigation but not alternative text
           </td>
 
         </tr>
@@ -562,25 +531,25 @@
             Intermediate
           </td>
           <td>
-            Dragging objects along a 1D line
+            Dragging in 1 Dimension
           </td>
           <td>
             Web
           </td>
           <td>
-            Slider?
+            Application
           </td>
           <td>
-            Move 2 masses in a line closer and farther away from each other to observe the force they excert on each other.
+            Select a range between two draggable objects
           </td>
           <td>
-            Keyboard/Mouse/Touch
+            Keyboard/Mouse/Touch/Other
           </td>
           <td>
-            Masses look like web sliders. Arrow keys move them along 1D position line. Page up and  page down move them by 1/10 of their available range. Home and End move masses to beginning and end of their range, respectively.
+            Metaphor for 1 dimensional dragging is a slider. Interaction pattern can map to that. Arrow keys move objects in one dimension. Home/End/PgUp/PgDn move objects more quickly. Accessibility API used to convey application state changes during the operation.
           </td>
           <td>
-            Prototype Version
+            <a href="https://phet-dev.colorado.edu/html/gravity-force-lab-basics/1.0.0-dev.41/phet/gravity-force-lab-basics_en_phet.html">PhET Simulation (Gravity Force Lab: Basics)</a>
           </td>
           <td>
 
@@ -601,7 +570,8 @@
             Application
           </td>
           <td>
-            Example: Drag squares into an nxn grid to create shapes and measure shape area and perimeter, where n is > 10
+            Drag objects into an nxn grid to organize, where n is > 10. Objects may move to another location
+            upon release.
           </td>
           <td>
             Keyboard/Mouse/Touch
@@ -610,12 +580,11 @@
 
           </td>
           <td>
-            Prototype Version
+            <a href="https://phet.colorado.edu/sims/html/area-builder/latest/area-builder_en.html">Area Builder</a>
           </td>
           <td>
             This example currently has no support for accessibility.
           </td>
-
         </tr>
         <tr>
           <td>
@@ -661,7 +630,7 @@
             OS manipulation of objects (applications, or content)
           </td>
           <td>
-            Dragging and dropping multiple non-contigeous items
+            Dragging and dropping multiple non-contiguous items
           </td>
           <td>
             Keyboard
@@ -682,7 +651,7 @@
             Difficult
           </td>
           <td>
-            Play with object in a 2D plane, while dragging object can mutate, when it is released object  position might change
+            Drag and Drop in a 2D plane
           </td>
           <td>
             Web
@@ -691,28 +660,27 @@
             Application
           </td>
           <td>
-            Move in a 2D play area, transfer electrons from sweater to balloon, rub balloon on an insulator,  release balloon and observe it respond to electrostatic forces.
+            Drag object freely in a 2D plane where the drag operation can can change the object state and other objects in the application. Destination of object and other application state can change upon release of object.
           </td>
           <td>
             Keyboard/Mouse/Touch
           </td>
           <td>
-            WASD and arrow keys move balloon in 2D plane. Hold down shift plus movement keys to  move balloon more slowly. Various hot key combinations move balloon to important locations in play area. After movement and after certain events, descriptive feedback is provided to user with aria-live attribute.
+            WASD and arrow keys move object in 2D plane. Shift modifier key changes drag speed. Various hot key combinations move object to important locations in plane. Accessibility API used to describe state changes during and after interaction.
           </td>
           <td>
-            Prototype Version
+            <a href="https://phet.colorado.edu/sims/html/balloons-and-static-electricity/latest/balloons-and-static-electricity_en.html">PhET Simulation (Balloons and Static Electricity)</a>
           </td>
           <td>
-            JAWS makes use of arrow keys imposssible, even with ARIA role=application
+            JAWS makes use of arrow keys imposssible for continuous object movement, even with ARIA role=application
           </td>
-
         </tr>
         <tr>
           <td>
             Difficult
           </td>
           <td>
-            Rubbing two things against each other
+            Speed dependent dragging
           </td>
           <td>
             Web
@@ -721,60 +689,26 @@
             Application
           </td>
           <td>
-            Example: Rub two things against each other, observing how friction causes a material to heat up and melt. If rubbing occcurs quickly, temperature rises and particles can be rubbed off of objects.
+            Drag object freely in a 2D area where speed of drag impacts state of the object and surrounding application.
           </td>
           <td>
             Keyboard/Mouse/Touch
           </td>
           <td>
-            WASD and arrow keys move objects up, down, left, and right in a 2D plane. Hold down shift  plus movement keys  to move object more slowly.
+            WASD and arrow keys move object in a 2D plane. Hold down shift to change movement speed. As object moves through critical locations, Accessibility API is used to announce state changes.
           </td>
           <td>
-            Prototype Version
+             <p><a href=" https://phet.colorado.edu/sims/html/friction/latest/friction_en.html">PhET Simulation (Friction)</a></p>
           </td>
           <td>
-            JAWS makes use of arrow keys impossible, even with ARIA  role=application.
           </td>
-
         </tr>
         <tr>
           <td>
-            Difficult
+            Intermediate
           </td>
           <td>
-            Example of speed impacting drag interaction
-          </td>
-          <td>
-            Web
-          </td>
-          <td>
-            Application
-          </td>
-          <td>
-            Example: Drag an object across another object where speed of dragging impacts behavior. Example: A magnet dragging thorugh a coil of wire connected to a lightbulb. Change in drag speed will change induced current through the wire and brightness of the lightbulb.
-          </td>
-          <td>
-            Keyboard/Mouse/Touch
-          </td>
-          <td>
-            WASD and arrow keys move object in a 2D plane. Hold down shift to change movement speed. As object moves through critical locations, aria-live is used to announce changes in the application. For instance, if magnet moves quickly to the left and the lightbulb lights up, a summary of this is announced with aria-live.
-          </td>
-          <td>
-             <p><a href=" https://phet.colorado.edu/sims/html/friction/latest/friction_en.html">Phet Simulation (Friction)</a></p>
-             <p><a href="https://phet.colorado.edu/sims/html/faradays-law/latest/faradays-law_en.html">Phet Simulation (Faradays Law)</a></p>
-           
-          </td>
-          <td>
-            These examples currently has no support for accessibility.
-          </td>
-
-        </tr>
-        <tr>
-          <td>
-            Difficult
-          </td>
-          <td>
-            Sorting items from 3 buckets into 3 destinations:
+            Sorting
           </td>
           <td>
             Web
@@ -783,20 +717,20 @@
             Sorting
           </td>
           <td>
-            Example: Protons, neutrons, and electrons are available in three buckets. Particles can be dragged into an atom, where each particle type needs to go in a particular location. If drop location is accurate enough, particle ill move into correct location based on atomic model. Otherwise it will return to particle bucket.
+            Sorting task where dragged object can move away from target destination.
           </td>
           <td>
             Keyboard/Mouse/Touch
           </td>
           <td>
-
+            Items can be selected from source and moved to destination. Accessibility API should be used to describe the final destination of the item after release.
           </td>
           <td>
-                <a href="https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_en.html?screens=1">Phet Simulation (Building an atom)</a>
+            <a href="https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_en.html?screens=1">PhET Simulation (Build an atom)</a>
            
           </td>
           <td>
-            This example currently has no support for accessibility.
+            This example is currently not accessible.
           </td>
 
         </tr>
